@@ -26,7 +26,7 @@
      {
        profile: { name, division },
        learn:   { read: [cardId], spots: [spotId] },
-       sim:     { total, answers: { emailId: { choice, correct, marked: [partId] } } },
+       sim:     { v: 2, stage, phase, remaining, log, ends, done }  (lihat simulation.js),
        test:    { ids, order: { qid: [optId] }, answers: { qid: optId }, flags: { qid: true }, current, timer, elapsed },
        result:  { date, score, total, percent, byCat, answers, ids, elapsed, timer }
      } */
@@ -158,8 +158,10 @@
 
   function progress() {
     var learnRead = (state.learn && state.learn.read || []).length;
-    var simTotal = state.sim && state.sim.total || 12;
-    var simDone = state.sim && state.sim.answers ? Object.keys(state.sim.answers).length : 0;
+    /* Simulasi: 4 tahap. State lama (inbox 12 email) tidak dihitung. */
+    var sim = state.sim && state.sim.v === 2 ? state.sim : null;
+    var simTotal = 4;
+    var simDone = sim ? (sim.done ? simTotal : sim.stage || 0) : 0;
     var test = state.test;
     return {
       learn: { done: Math.min(learnRead, LEARN_TOTAL), total: LEARN_TOTAL },

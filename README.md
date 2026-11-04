@@ -12,12 +12,12 @@ id/*.html                         Versi BAHASA INDONESIA (halaman yang sama)
 assets/css/style.css     Design system (token warna, komponen, mode ujian, cetak)
 assets/js/i18n.js        Semua teks yang dibuat JavaScript, EN + ID
 assets/js/app.js         Bahasa aktif, state + localStorage, navigasi, reset, beranda & belajar
-assets/js/simulation.js  Kotak masuk simulasi
+assets/js/simulation.js  Simulasi phishing 4 tahap (email, SMS, chat, QR) + hasilnya
 assets/js/assessment.js  Tes (mode ujian satu layar) + halaman hasil
 assets/fonts/            Jost (di-host sendiri, tanpa Google Fonts)
 assets/img/logo-grintec.png  Logo versi web (800px). File asli: grintec-logo.png
 
-data/emails.js        Email simulasi, Inggris      data/emails.id.js     Indonesia
+data/sim.js           Konten simulasi, Inggris     data/sim.id.js        Indonesia
 data/questions.js     Bank soal + kategori, Inggris data/questions.id.js  Indonesia
 ```
 
@@ -31,7 +31,7 @@ Halaman bahasa Inggris memuat `data/*.js`, halaman Indonesia memuat `data/*.id.j
   - Angka studi kasus (60,6% / 7,0% / 5,6% / 36,6%, target 50%): halaman studi kasus GRINTEC di grintecs.com/en/works/phishing-simulation-casestudy/.
   - Perbarui saat DBIR dan laporan IC3 edisi baru terbit (biasanya April sampai Mei).
 - Tagline dan kontak diambil dari grintecs.com (November 2026): "Securing Future Transformation", info@grintecs.com, WhatsApp +62 851 6136 4811. Perbarui di footer kedua bahasa dan di blok CTA `result.html` jika berubah.
-- Pastikan domain fiktif di contoh (misalnya `nusantararaya.co.id`, `kirimcepat.co.id`, `contohsejahtera.co.id`, `tokolaris.co.id`, `akunkerja365.com`) memang tidak dimiliki perusahaan nyata. Ganti di kedua bahasa jika ternyata ada.
+- Pastikan domain fiktif di contoh (misalnya `nusantararaya.co.id`, `kirimcepat.co.id`, `contohsejahtera.co.id`, `tokolaris.co.id`, `akunkerja365.com`, serta domain jebakan seperti `contohsejahtera-id.com`, `akunkerja-docs.net`, `nusantararaya-verifikasi.com`, `share-files.net`, `bayarparkir-online.com`) memang tidak dimiliki perusahaan nyata. Ganti di kedua bahasa jika ternyata ada.
 
 ## Menjalankan dan deploy
 
@@ -81,22 +81,22 @@ mail: { fromName: "...", fromAddress: "...", subject: "...", snippet: "...", att
 
 Jumlah soal per tingkat diatur di `GRINTEC_CONFIG.perLevel` (default 5/5/5). Bank soal minimal harus punya soal sebanyak angka itu di setiap tingkat. Batas kategori hasil diatur di `GRINTEC_CONFIG.levels`.
 
-## Menambah atau mengubah email simulasi
+## Mengubah konten simulasi
 
-Edit **kedua** file: `data/emails.js` dan `data/emails.id.js`. Struktur lengkap ada di komentar atas file. Setiap bagian email (`from`, `subject`, blok `body`, `attachments`) boleh diberi:
+Simulasi punya empat tahap berurutan: **email**, **SMS**, **chat**, dan **QR**, lalu halaman hasil. Setiap tahap punya hitung mundur (`seconds`) dan konteks singkat yang tampil sebelum tahap dimulai. Peserta bisa membuka pesan dan menekan "Laporkan". Klik pada link, tombol, atau "Buka link" dari QR mana pun langsung menutup tahap itu dan tercatat sebagai klik.
 
-```js
-flag: { cat: "link", note: "Penjelasan red flag di bagian ini." }
-```
+Edit **kedua** file: `data/sim.js` dan `data/sim.id.js`. Struktur lengkap ada di komentar atas `data/sim.js`. Setiap pesan phishing punya `flags` (daftar `{ cat, note }`) dan `trap` (apa yang terjadi jika diklik). Pesan aman wajib punya `safeReason`. Tulis `{nama}` untuk menyapa pengguna dengan namanya.
 
-Bagian yang punya `flag` diberi nomor merah setelah pengguna menjawab, dan dipakai untuk menilai bagian yang ditandai pengguna. Email aman (`phishing: false`) wajib punya `safeReason`. Jaga perbandingan sekitar 60:40 antara phishing dan aman. Tulis `{nama}` untuk menyapa pengguna dengan namanya.
+Kode QR digambar sebagai pola dekoratif yang sengaja **tidak bisa dipindai** kamera, sehingga tidak ada orang yang benar-benar membuka domain jebakan.
+
+Halaman hasil menampilkan level (Rentan / Cukup Waspada / Sangat Waspada), angka ala laporan PhaaS (dibuka, jebakan diklik, jebakan dilaporkan, salah lapor), pembahasan per pesan, dan CTA "Implement this in my company" / "Terapkan di perusahaan saya".
 
 Aturan konten: gunakan brand, orang, dan domain **fiktif**. Jangan memakai nama, logo, atau domain perusahaan maupun instansi nyata.
 
 ## Mengubah teks antarmuka
 
 - Teks statis halaman: langsung di file HTML (`*.html` untuk Inggris, `id/*.html` untuk Indonesia).
-- Teks yang dibuat JavaScript (tombol simulasi, feedback, layar tes, hasil): `assets/js/i18n.js`. Setiap kunci harus ada di `id` dan `en`.
+- Teks yang dibuat JavaScript (layar simulasi, layar tes, hasil): `assets/js/i18n.js`. Setiap kunci harus ada di `id` dan `en`.
 
 ## Kategori red flag
 
