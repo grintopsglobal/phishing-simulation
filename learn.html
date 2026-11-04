@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Know the Signs of Phishing | GRINTEC</title>
+  <meta name="description" content="Eight signs of a phishing email, with examples and what to do.">
+  <link rel="alternate" hreflang="id" href="id/learn.html">
+  <link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-grintec.png" alt="GRINTEC, home" width="800" height="229"></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="assessment.html">Test</a></li>
+          <li><a href="result.html">Result</a></li>
+        </ul>
+      </nav>
+      <a class="lang-switch" href="id/learn.html" lang="id" hreflang="id">Bahasa Indonesia</a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="page-head">
+      <h1>Know the signs of phishing</h1>
+      <p>A phishing email rarely has one obvious giveaway. Usually several small signs show up together. Open each card to see an example and what you should do.</p>
+      <p class="annot-count" id="learn-count" role="status"></p>
+    </div>
+
+    <!-- Eight red flags. Card ids are used by recommendations on the result page. -->
+    <ol class="flags" id="flags">
+      <li>
+        <details class="flag-card" id="tanda-domain">
+          <summary>
+            <div><h3>A sender address that is almost right</h3><p>Fake domains and typosquatting</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>The sender name can be set to anything, so what you need to read is the email address, especially the part after the @ sign. Scammers create domains that look very close to the real one: swapping a letter, adding words like "secure" or "support", or using a different ending.</p>
+              <div class="todo"><h4>What to do</h4><p>Tap the sender name to see the full address. Read the domain letter by letter. If it differs from the one you usually see, don't respond and report it to the IT team.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example: payroll email</span>
+              <div class="row"><span class="tag-ok">Real</span><span class="mono">payroll@contohsejahtera.co.id</span></div>
+              <div class="row"><span class="tag-bad">Fake</span><span class="mono">payroll@contohsejahtera<mark class="bad">-mail.com</mark></span></div>
+              <div class="row"><span class="tag-bad">Fake</span><span class="mono">payroll@contohsejaht<mark class="bad">re</mark>a.co.id</span><span class="small muted">("e" and "r" swapped)</span></div>
+              <div class="row"><span class="tag-bad">Fake</span><span class="mono">payroll@contohsejahtera.co.<mark class="bad">ld</mark></span><span class="small muted">(letter L, not I)</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-urgensi">
+          <summary>
+            <div><h3>Pressure and threats</h3><p>Designed to make you panic</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>"Account blocked in 2 hours", "fine if not paid now", "last day today". Panic makes us act before we think, and that is exactly what scammers want. Curiosity bait works the same way, for example "salary list for all employees".</p>
+              <div class="todo"><h4>What to do</h4><p>Pause. Official organisations rarely give deadlines of a few hours by email. Check whether it is true through the official app or phone number, not through the email.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example subject lines</span>
+              <div class="row"><span class="urgent-subject">URGENT!!! Your account will be blocked in 2 hours</span></div>
+              <div class="row"><span class="urgent-subject">Final warning: late payment penalty</span></div>
+              <div class="row"><span>Confidential: 2027 salary revision (do not share)</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-link">
+          <summary>
+            <div><h3>Link text that differs from the real address</h3><p>What you see is not always where you go</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>The text of a link can say anything, including an official website address. The real destination only appears when you hover over the link, usually in the bottom left corner of the browser. What decides the destination is the domain right before the first slash.</p>
+              <div class="todo"><h4>What to do</h4><p>On a computer, hover without clicking. On a phone, long-press the link to see the address. If in doubt, type the official website address yourself.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Try hovering over or tapping this link</span>
+              <p><button class="sim-link" type="button" data-url="http://nusantararaya.verifikasi-akun.xyz/login" aria-controls="reveal-1">www.nusantararaya.co.id/login</button></p>
+              <span class="url-reveal" id="reveal-1" role="status" hidden></span>
+              <p class="small muted" style="margin-top:8px">This link is a simulation and does not open anything.</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-lampiran">
+          <summary>
+            <div><h3>Attachments you did not ask for</h3><p>Files in disguise</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Attachments can contain malware. Be careful with files you were not expecting, especially ones ending in .exe, .zip, .html, or Office files that ask you to "Enable Content". File names can be disguised, for example .pdf.exe, which is really a program.</p>
+              <div class="todo"><h4>What to do</h4><p>Don't open unexpected attachments, even from a colleague or a supplier you know. Confirm by chat or phone, and report anything suspicious to the IT team.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example attachment names</span>
+              <div class="row"><span class="file-chip">Invoice_Okt2026.pdf<mark class="bad">.exe</mark></span><span class="tag-bad">Program</span></div>
+              <div class="row"><span class="file-chip">Surat_Teguran<mark class="bad">.zip</mark></span><span class="tag-bad">Archive</span></div>
+              <div class="row"><span class="file-chip">Laporan_Q3.xls<mark class="bad">m</mark></span><span class="tag-bad">Has macros</span></div>
+              <div class="row"><span class="file-chip">Formulir_Verifikasi<mark class="bad">.html</mark></span><span class="tag-bad">Web page</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-data">
+          <summary>
+            <div><h3>Requests for your password, PIN, or OTP</h3><p>Sensitive data and credentials</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Banks, tax offices, couriers, and the IT team never ask for your password, PIN, OTP code, or card CVV by email, chat, or phone. Fake sign-in pages are often made to look almost identical to the real ones.</p>
+              <div class="todo"><h4>What to do</h4><p>Never give your password or OTP to anyone. If you already typed it into a suspicious page, change your password right away on the official site and report it to the IT team.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example form on a fake page</span>
+              <div class="fake-form" aria-label="Example of a fake form">
+                <span>Work email</span>
+                <span>Password</span>
+                <span>OTP code from SMS</span>
+              </div>
+              <p class="small" style="margin:10px 0 0"><span class="tag-bad">Danger</span> Asks for a password and an OTP at the same time.</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-salam">
+          <summary>
+            <div><h3>A generic greeting instead of your name</h3><p>Generic greetings</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Phishing is usually sent to thousands of addresses at once, so the scammer does not know your name. Services you use usually do. A generic greeting is not proof on its own, but it is a reason to look more closely.</p>
+              <div class="todo"><h4>What to do</h4><p>If the greeting is generic and the email asks for something, check the other signs: the sender address, the links, and what is being requested.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example greetings</span>
+              <div class="row"><span class="tag-bad">Be careful</span><span>"Dear Customer,"</span></div>
+              <div class="row"><span class="tag-bad">Be careful</span><span>"Dear Employee,"</span></div>
+              <div class="row"><span class="tag-bad">Be careful</span><span>"Dear Winner,"</span></div>
+              <div class="row"><span class="tag-ok">More normal</span><span>Greets you by name</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-bahasa">
+          <summary>
+            <div><h3>Odd language and typos</h3><p>Never went through an official review</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Official communication is usually checked before it is sent. Typos, mixed languages, random capital letters, and too many exclamation marks often appear in phishing emails. Some scammers write carefully, so look at this sign together with the others.</p>
+              <div class="todo"><h4>What to do</h4><p>Read the email calmly. If the writing style is not what you normally get from that sender, treat it as a reason to check further.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example sentence</span>
+              <p style="margin:0">Dear <mark class="bad">costumer</mark>, we have detected <mark class="bad">suspicous</mark> activity on <mark class="bad">you</mark> account. <mark class="bad">kindly</mark> verify now to avoid it get <mark class="bad">block</mark>!!!</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-transfer">
+          <summary>
+            <div><h3>Urgent money transfer requests</h3><p>BEC, or scams impersonating your manager</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Scammers pose as a manager, director, or supplier and ask for a quick transfer or a change of bank details. The pattern: a new number or address, a reason why they are busy, a request for secrecy, and "don't call me".</p>
+              <div class="todo"><h4>What to do</h4><p>Verify by phone, on the number you already have saved, not the one in the message. Follow the finance approval procedure, however urgent the request sounds.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Example chat</span>
+              <div class="chat">
+                <span class="who">The Director (new number)</span>
+                <div class="bubble">I'm in a meeting. Please transfer Rp48,500,000 to this supplier's account now.</div>
+                <div class="bubble">Don't call me yet, I'll explain later. Keep this from the team for now.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </li>
+    </ol>
+
+    <!-- Annotated email -->
+    <section class="annotated" aria-labelledby="annot-title">
+      <div>
+        <h2 id="annot-title">Practice: find the signs in this email</h2>
+        <p class="muted">The email below is a mock-up. Tap each red number to see the explanation.</p>
+        <div class="btn-row" style="align-items:center">
+          <span class="annot-count" id="annot-count" role="status"></span>
+          <button class="btn btn-quiet" type="button" id="annot-all">Show all</button>
+        </div>
+      </div>
+
+      <article class="mail-demo" aria-label="Annotated example of a phishing email">
+        <div class="mail-head">
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s1" aria-expanded="false" aria-controls="note-1" aria-label="Sign 1, sender address">1</button>
+            <span>From: <strong>Bank Nusantara Raya</strong> <span class="mono">&lt;keamanan@nusantararaya-secure.co&gt;</span></span>
+            <div class="spot-note" id="note-1" hidden><strong>Fake domain.</strong> This bank uses nusantararaya.co.id. "-secure" and the .co ending were added to look official.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s2" aria-expanded="false" aria-controls="note-2" aria-label="Sign 2, subject">2</button>
+            <strong>IMPORTANT: Your Internet Banking access will be blocked in 12 hours</strong>
+            <div class="spot-note" id="note-2" hidden><strong>Time pressure.</strong> The 12-hour limit is there so you panic and don't stop to check.</div>
+          </div>
+        </div>
+        <div class="mail-content">
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s3" aria-expanded="false" aria-controls="note-3" aria-label="Sign 3, greeting">3</button>
+            Dear Customer,
+            <div class="spot-note" id="note-3" hidden><strong>Generic greeting.</strong> Your bank knows your name. This email was sent in bulk.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s4" aria-expanded="false" aria-controls="note-4" aria-label="Sign 4, language">4</button>
+            Our sistem has detected unusual login activty on you account. For security, access will be block permanently if not verified immediately.
+            <div class="spot-note" id="note-4" hidden><strong>Odd language.</strong> "sistem", "activty", "you account", and "will be block" rarely get through in a real bank email.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s5" aria-expanded="false" aria-controls="note-5" aria-label="Sign 5, data request">5</button>
+            Have your ATM card number, PIN, and the OTP code we will send to your phone ready.
+            <div class="spot-note" id="note-5" hidden><strong>Asks for secret data.</strong> A bank never asks for your PIN or OTP, under any circumstances.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s6" aria-expanded="false" aria-controls="note-6" aria-label="Sign 6, link">6</button>
+            <button class="sim-link as-button" type="button" data-url="http://nusantararaya-secure.co/verifikasi?id=88213" aria-controls="reveal-2">Verify now</button>
+            <span class="url-reveal" id="reveal-2" role="status" hidden></span>
+            <div class="spot-note" id="note-6" hidden><strong>The link goes to another domain.</strong> Hover over or tap the button: the address is nusantararaya-secure.co, not the bank's official site.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s7" aria-expanded="false" aria-controls="note-7" aria-label="Sign 7, attachment">7</button>
+            <span class="file-chip">Formulir_Verifikasi.html</span>
+            <div class="spot-note" id="note-7" hidden><strong>Dangerous attachment.</strong> An .html file can open a fake sign-in page right in your browser.</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Real emails, so users don't treat every email as dangerous -->
+    <section id="email-aman" class="result-section" aria-labelledby="safe-title">
+      <h2 id="safe-title">So what does a safe email look like?</h2>
+      <p class="muted">Most of the emails you get every day are real. Being alert does not mean suspecting every email. A safe email usually meets all three of these at once:</p>
+      <div class="safe-guide">
+        <div><h3>The sender matches</h3><p>The domain is exactly the one you normally receive, for example your own company's domain.</p></div>
+        <div><h3>The context makes sense</h3><p>It relates to something you actually did or are expecting, like an order or a meeting.</p></div>
+        <div><h3>It asks for no secrets</h3><p>It does not ask for a password, OTP, or transfer, and its links go to an official domain.</p></div>
+      </div>
+    </section>
+
+    <div class="next-step">
+      <div>
+        <h2>Ready to practise?</h2>
+        <p class="muted" style="margin:0">The simulated inbox has 12 emails. About 4 in 10 of them are real.</p>
+      </div>
+      <a class="btn btn-primary" href="simulation.html">Open the practice inbox</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img src="assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229">
+      <p>Securing Future Transformation</p>
+      <p>© 2026 GRINTEC · <a href="mailto:info@grintecs.com">info@grintecs.com</a> · <a href="https://wa.me/6285161364811" rel="noopener">WhatsApp +62 851 6136 4811</a> · <a href="https://grintecs.com/en/" rel="noopener">grintecs.com</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

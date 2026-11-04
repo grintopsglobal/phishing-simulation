@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pre-Assessment Result | GRINTEC</title>
+  <meta name="description" content="Your phishing detection score, results by category, and what to study next.">
+  <link rel="alternate" hreflang="id" href="id/result.html">
+  <link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-grintec.png" alt="GRINTEC, home" width="800" height="229"></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="assessment.html">Test</a></li>
+          <li><a href="result.html">Result</a></li>
+        </ul>
+      </nav>
+      <a class="lang-switch" href="id/result.html" lang="id" hreflang="id">Bahasa Indonesia</a>
+    </div>
+  </header>
+
+  <main id="main" class="container narrow">
+    <div class="print-only"><img class="print-logo" src="assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229"></div>
+    <div class="page-head">
+      <h1>Pre-assessment result</h1>
+    </div>
+
+    <div id="result-root">
+      <p class="state-msg loading">Loading your result</p>
+    </div>
+
+    <div class="no-print result-section" id="reset-wrap" hidden>
+      <button class="btn btn-quiet" type="button" data-reset-open aria-expanded="false" aria-controls="reset-all">Start everything over</button>
+      <div class="notice notice-warn confirm-box" id="reset-all" hidden>
+        <p>All learning progress, simulation answers, your name, and test results in this browser will be deleted.</p>
+        <div class="btn-row">
+          <button class="btn btn-danger" type="button" data-reset-confirm>Yes, delete everything</button>
+          <button class="btn btn-quiet" type="button" data-reset-cancel>Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRINTEC PhaaS CTA -->
+    <section class="phaas" aria-labelledby="phaas-title">
+      <div>
+        <h2 id="phaas-title">Measure how ready your whole team is</h2>
+        <p>GRINTEC runs controlled phishing simulations (Phishing as a Service) and security awareness training to measure and raise your employees' security awareness.</p>
+        <p style="margin-top:8px">Email <a href="mailto:info@grintecs.com">info@grintecs.com</a> or WhatsApp <a href="https://wa.me/6285161364811" rel="noopener">+62 851 6136 4811</a></p>
+      </div>
+      <a class="btn btn-primary" href="https://grintecs.com/en/contact/" rel="noopener">Contact GRINTEC</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img src="assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229">
+      <p>Securing Future Transformation</p>
+      <p>© 2026 GRINTEC · <a href="mailto:info@grintecs.com">info@grintecs.com</a> · <a href="https://wa.me/6285161364811" rel="noopener">WhatsApp +62 851 6136 4811</a> · <a href="https://grintecs.com/en/" rel="noopener">grintecs.com</a></p>
+    </div>
+  </footer>
+
+  <script src="data/questions.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/assessment.js"></script>
+</body>
+</html>

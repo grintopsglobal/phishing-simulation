@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenali Tanda-Tanda Phishing | GRINTEC</title>
+  <meta name="description" content="Delapan tanda email phishing beserta contoh dan langkah yang perlu diambil.">
+  <link rel="alternate" hreflang="en" href="../learn.html">
+  <link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="../assets/img/logo-grintec.png" alt="GRINTEC, ke beranda" width="800" height="229"></a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="learn.html">Belajar</a></li>
+          <li><a href="simulation.html">Simulasi</a></li>
+          <li><a href="assessment.html">Tes</a></li>
+          <li><a href="result.html">Hasil</a></li>
+        </ul>
+      </nav>
+      <a class="lang-switch" href="../learn.html" lang="en" hreflang="en">English</a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="page-head">
+      <h1>Kenali tanda-tanda phishing</h1>
+      <p>Email phishing jarang punya satu ciri yang jelas. Biasanya beberapa tanda kecil muncul bersamaan. Buka tiap kartu untuk melihat contohnya dan apa yang perlu Anda lakukan.</p>
+      <p class="annot-count" id="learn-count" role="status"></p>
+    </div>
+
+    <!-- Delapan red flag. id kartu dipakai rekomendasi di halaman hasil. -->
+    <ol class="flags" id="flags">
+      <li>
+        <details class="flag-card" id="tanda-domain">
+          <summary>
+            <div><h3>Alamat pengirim yang hampir mirip</h3><p>Domain palsu atau typosquatting</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Nama pengirim bisa diisi apa saja, jadi yang perlu dibaca adalah alamat emailnya, terutama bagian setelah tanda @. Penipu membuat domain yang sangat mirip dengan yang asli: mengganti satu huruf, menambah kata seperti "secure" atau "support", atau memakai akhiran lain.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Ketuk nama pengirim untuk melihat alamat lengkap. Baca domainnya huruf demi huruf. Jika berbeda dari yang biasa, jangan tanggapi dan laporkan ke tim IT.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh: email payroll</span>
+              <div class="row"><span class="tag-ok">Asli</span><span class="mono">payroll@contohsejahtera.co.id</span></div>
+              <div class="row"><span class="tag-bad">Palsu</span><span class="mono">payroll@contohsejahtera<mark class="bad">-mail.com</mark></span></div>
+              <div class="row"><span class="tag-bad">Palsu</span><span class="mono">payroll@contohsejaht<mark class="bad">re</mark>a.co.id</span><span class="small muted">("e" dan "r" ditukar)</span></div>
+              <div class="row"><span class="tag-bad">Palsu</span><span class="mono">payroll@contohsejahtera.co.<mark class="bad">ld</mark></span><span class="small muted">(huruf L, bukan I)</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-urgensi">
+          <summary>
+            <div><h3>Desakan waktu dan ancaman</h3><p>Dibuat agar Anda panik</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>"Akun diblokir dalam 2 jam", "denda jika tidak segera", "terakhir hari ini". Rasa panik membuat kita bertindak sebelum berpikir, dan itulah yang diincar penipu. Pancingan rasa penasaran juga sama, misalnya "daftar gaji seluruh karyawan".</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Berhenti sejenak. Lembaga resmi jarang memberi batas waktu hitungan jam lewat email. Cek kebenarannya lewat aplikasi atau nomor resmi, bukan dari email itu.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh baris subjek</span>
+              <div class="row"><span class="urgent-subject">SEGERA!!! Akun Anda diblokir dalam 2 jam</span></div>
+              <div class="row"><span class="urgent-subject">Peringatan terakhir: denda keterlambatan</span></div>
+              <div class="row"><span>Rahasia: revisi gaji 2027 (jangan disebarkan)</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-link">
+          <summary>
+            <div><h3>Teks link berbeda dengan alamat aslinya</h3><p>Yang tertulis belum tentu yang dibuka</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Teks sebuah link bisa ditulis apa saja, termasuk alamat situs resmi. Alamat yang sebenarnya baru terlihat saat kursor diarahkan ke link, biasanya di pojok kiri bawah browser. Yang menentukan tujuan adalah domain tepat sebelum garis miring pertama.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Di komputer, arahkan kursor tanpa mengklik. Di HP, tekan lama link untuk melihat alamatnya. Jika ragu, ketik sendiri alamat situs resminya.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Coba arahkan kursor atau ketuk link ini</span>
+              <p><button class="sim-link" type="button" data-url="http://nusantararaya.verifikasi-akun.xyz/login" aria-controls="reveal-1">www.nusantararaya.co.id/login</button></p>
+              <span class="url-reveal" id="reveal-1" role="status" hidden></span>
+              <p class="small muted" style="margin-top:8px">Link ini hanya simulasi dan tidak membuka halaman apa pun.</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-lampiran">
+          <summary>
+            <div><h3>Lampiran yang tidak Anda minta</h3><p>File yang menyamar</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Lampiran bisa berisi program jahat. Waspadai file yang tidak Anda harapkan, terutama yang berakhiran .exe, .zip, .html, atau file Office yang meminta "Enable Content". Nama file bisa menyamar, misalnya .pdf.exe yang sebenarnya program.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Jangan buka lampiran yang tidak diharapkan, meskipun dari rekan atau vendor yang dikenal. Konfirmasi lewat chat atau telepon, lalu laporkan ke tim IT jika mencurigakan.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh nama lampiran</span>
+              <div class="row"><span class="file-chip">Invoice_Okt2026.pdf<mark class="bad">.exe</mark></span><span class="tag-bad">Program</span></div>
+              <div class="row"><span class="file-chip">Surat_Teguran<mark class="bad">.zip</mark></span><span class="tag-bad">Arsip</span></div>
+              <div class="row"><span class="file-chip">Laporan_Q3.xls<mark class="bad">m</mark></span><span class="tag-bad">Ada makro</span></div>
+              <div class="row"><span class="file-chip">Formulir_Verifikasi<mark class="bad">.html</mark></span><span class="tag-bad">Halaman web</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-data">
+          <summary>
+            <div><h3>Permintaan password, PIN, atau OTP</h3><p>Data sensitif dan kredensial</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Bank, kantor pajak, kurir, maupun tim IT tidak pernah meminta password, PIN, kode OTP, atau CVV kartu lewat email, chat, atau telepon. Halaman login palsu sering dibuat sangat mirip dengan aslinya.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Jangan pernah memberikan password atau OTP kepada siapa pun. Jika Anda terlanjur mengetiknya di halaman mencurigakan, segera ganti password lewat situs resmi dan lapor ke tim IT.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh formulir di halaman palsu</span>
+              <div class="fake-form" aria-label="Contoh formulir palsu">
+                <span>Email kantor</span>
+                <span>Password</span>
+                <span>Kode OTP dari SMS</span>
+              </div>
+              <p class="small" style="margin:10px 0 0"><span class="tag-bad">Bahaya</span> Meminta password dan OTP sekaligus.</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-salam">
+          <summary>
+            <div><h3>Salam umum, bukan nama Anda</h3><p>Salam generik</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Phishing biasanya dikirim ke ribuan alamat sekaligus, sehingga penipu tidak tahu nama Anda. Layanan yang Anda pakai biasanya tahu. Salam generik bukan bukti pasti, tetapi tanda untuk memeriksa lebih teliti.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Jika salamnya umum dan email meminta sesuatu, periksa tanda lain: alamat pengirim, link, dan permintaannya.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh salam</span>
+              <div class="row"><span class="tag-bad">Waspada</span><span>"Yth. Nasabah,"</span></div>
+              <div class="row"><span class="tag-bad">Waspada</span><span>"Dear Karyawan,"</span></div>
+              <div class="row"><span class="tag-bad">Waspada</span><span>"Kepada Pemenang Yth.,"</span></div>
+              <div class="row"><span class="tag-ok">Lebih wajar</span><span>Menyapa dengan nama Anda</span></div>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-bahasa">
+          <summary>
+            <div><h3>Bahasa janggal dan salah ketik</h3><p>Tidak melalui pemeriksaan resmi</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Komunikasi resmi biasanya diperiksa sebelum dikirim. Salah ketik, campuran bahasa Inggris dan Indonesia, huruf kapital yang acak, dan tanda seru berlebihan sering muncul di email phishing. Penipu yang lebih rapi tetap ada, jadi tanda ini perlu dilihat bersama tanda lain.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Baca email dengan tenang. Jika gaya bahasanya tidak seperti biasanya dari pengirim itu, anggap sebagai alasan untuk memeriksa lebih lanjut.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh kalimat</span>
+              <p style="margin:0"><mark class="bad">Dear</mark> nasabah, kami telah mendeteksi <mark class="bad">aktifitas</mark> mencurigakan pada akun <mark class="bad">anda</mark>. <mark class="bad">mohon</mark> segera verifikasi agar akun tidak <mark class="bad">di blokir</mark>!!!</p>
+            </div>
+          </div>
+        </details>
+      </li>
+
+      <li>
+        <details class="flag-card" id="tanda-transfer">
+          <summary>
+            <div><h3>Permintaan transfer dana mendesak</h3><p>BEC atau penipuan mengatasnamakan atasan</p></div>
+            <span class="read-mark"></span>
+          </summary>
+          <div class="flag-body">
+            <div>
+              <p>Penipu menyamar sebagai atasan, direktur, atau vendor, lalu meminta transfer cepat atau perubahan rekening. Polanya: nomor atau alamat baru, alasan sedang sibuk, minta dirahasiakan, dan larangan menelepon.</p>
+              <div class="todo"><h4>Yang harus dilakukan</h4><p>Verifikasi lewat telepon ke nomor yang sudah Anda simpan, bukan nomor di pesan. Ikuti prosedur persetujuan keuangan, seberapa pun mendesaknya permintaan itu.</p></div>
+            </div>
+            <div class="example">
+              <span class="example-label">Contoh chat</span>
+              <div class="chat">
+                <span class="who">Pak Direktur (nomor baru)</span>
+                <div class="bubble">Saya sedang rapat. Tolong transfer Rp48.500.000 ke rekening vendor ini sekarang ya.</div>
+                <div class="bubble">Jangan telepon dulu, nanti saya jelaskan. Rahasiakan dulu dari tim.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+      </li>
+    </ol>
+
+    <!-- Email beranotasi -->
+    <section class="annotated" aria-labelledby="annot-title">
+      <div>
+        <h2 id="annot-title">Latihan: temukan tanda di email ini</h2>
+        <p class="muted">Email di bawah ini tiruan. Ketuk setiap nomor merah untuk melihat penjelasannya.</p>
+        <div class="btn-row" style="align-items:center">
+          <span class="annot-count" id="annot-count" role="status"></span>
+          <button class="btn btn-quiet" type="button" id="annot-all">Tampilkan semua</button>
+        </div>
+      </div>
+
+      <article class="mail-demo" aria-label="Contoh email phishing beranotasi">
+        <div class="mail-head">
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s1" aria-expanded="false" aria-controls="note-1" aria-label="Tanda 1, alamat pengirim">1</button>
+            <span>Dari: <strong>Bank Nusantara Raya</strong> <span class="mono">&lt;keamanan@nusantararaya-secure.co&gt;</span></span>
+            <div class="spot-note" id="note-1" hidden><strong>Domain palsu.</strong> Bank ini memakai nusantararaya.co.id. Kata "-secure" dan akhiran .co ditambahkan agar terlihat resmi.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s2" aria-expanded="false" aria-controls="note-2" aria-label="Tanda 2, subjek">2</button>
+            <strong>PENTING: Akses Internet Banking Anda diblokir dalam 12 jam</strong>
+            <div class="spot-note" id="note-2" hidden><strong>Desakan waktu.</strong> Batas 12 jam dibuat agar Anda panik dan tidak sempat mengecek.</div>
+          </div>
+        </div>
+        <div class="mail-content">
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s3" aria-expanded="false" aria-controls="note-3" aria-label="Tanda 3, salam">3</button>
+            Yth. Nasabah,
+            <div class="spot-note" id="note-3" hidden><strong>Salam generik.</strong> Bank Anda tahu nama Anda. Email ini dikirim massal.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s4" aria-expanded="false" aria-controls="note-4" aria-label="Tanda 4, bahasa">4</button>
+            Sistem kami mendeteksi aktifitas login yang tidak biasa pada akun anda. Demi keamanan, akses akan di blokir permanen jika tidak segera diverifikasi.
+            <div class="spot-note" id="note-4" hidden><strong>Bahasa janggal.</strong> "aktifitas", "anda" huruf kecil, dan "di blokir" jarang lolos di email resmi bank.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s5" aria-expanded="false" aria-controls="note-5" aria-label="Tanda 5, permintaan data">5</button>
+            Siapkan nomor kartu ATM, PIN, dan kode OTP yang akan kami kirim ke HP Anda.
+            <div class="spot-note" id="note-5" hidden><strong>Meminta data rahasia.</strong> PIN dan OTP tidak pernah diminta oleh bank, dalam situasi apa pun.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s6" aria-expanded="false" aria-controls="note-6" aria-label="Tanda 6, link">6</button>
+            <button class="sim-link as-button" type="button" data-url="http://nusantararaya-secure.co/verifikasi?id=88213" aria-controls="reveal-2">Verifikasi sekarang</button>
+            <span class="url-reveal" id="reveal-2" role="status" hidden></span>
+            <div class="spot-note" id="note-6" hidden><strong>Link menuju domain lain.</strong> Arahkan kursor atau ketuk tombolnya: alamatnya nusantararaya-secure.co, bukan situs resmi bank.</div>
+          </div>
+          <div class="spot">
+            <button class="spot-btn" type="button" data-spot="s7" aria-expanded="false" aria-controls="note-7" aria-label="Tanda 7, lampiran">7</button>
+            <span class="file-chip">Formulir_Verifikasi.html</span>
+            <div class="spot-note" id="note-7" hidden><strong>Lampiran berbahaya.</strong> File .html bisa membuka halaman login palsu langsung di browser Anda.</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Email asli, agar pengguna tidak menganggap semua email berbahaya -->
+    <section id="email-aman" class="result-section" aria-labelledby="safe-title">
+      <h2 id="safe-title">Lalu, seperti apa email yang aman?</h2>
+      <p class="muted">Kebanyakan email yang Anda terima setiap hari memang asli. Waspada bukan berarti curiga pada semua email. Email yang aman biasanya memenuhi ketiga hal ini sekaligus:</p>
+      <div class="safe-guide">
+        <div><h3>Pengirimnya sesuai</h3><p>Domainnya sama persis dengan yang biasa Anda terima, misalnya domain kantor Anda sendiri.</p></div>
+        <div><h3>Konteksnya masuk akal</h3><p>Isinya terkait dengan hal yang memang Anda lakukan atau tunggu, seperti pesanan atau rapat.</p></div>
+        <div><h3>Tidak meminta rahasia</h3><p>Tidak meminta password, OTP, atau transfer, dan link-nya mengarah ke domain resmi.</p></div>
+      </div>
+    </section>
+
+    <div class="next-step">
+      <div>
+        <h2>Siap berlatih?</h2>
+        <p class="muted" style="margin:0">Kotak masuk simulasi berisi 12 email. Sekitar 4 dari 10 di antaranya asli.</p>
+      </div>
+      <a class="btn btn-primary" href="simulation.html">Buka kotak masuk simulasi</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img src="../assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229">
+      <p>Transformasi digital yang aman sejak baris kode pertama</p>
+      <p>© 2026 GRINTEC · <a href="mailto:info@grintecs.com">info@grintecs.com</a> · <a href="https://wa.me/6285161364811" rel="noopener">WhatsApp +62 851 6136 4811</a> · <a href="https://grintecs.com/id/" rel="noopener">grintecs.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

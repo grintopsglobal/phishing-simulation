@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulasi Inbox: Spot the Phish | GRINTEC</title>
+  <meta name="description" content="Latihan membedakan email asli dan phishing di kotak masuk simulasi.">
+  <link rel="alternate" hreflang="en" href="../simulation.html">
+  <link rel="preload" href="../assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="../assets/img/logo-grintec.png" alt="GRINTEC, ke beranda" width="800" height="229"></a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="learn.html">Belajar</a></li>
+          <li><a href="simulation.html">Simulasi</a></li>
+          <li><a href="assessment.html">Tes</a></li>
+          <li><a href="result.html">Hasil</a></li>
+        </ul>
+      </nav>
+      <a class="lang-switch" href="../simulation.html" lang="en" hreflang="en">English</a>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="page-head">
+      <h1>Kotak masuk simulasi</h1>
+      <p>Buka setiap email, lalu putuskan: aman atau phishing. Anda langsung mendapat penjelasan setelah menjawab. Semua link dan lampiran di sini tiruan dan tidak membuka apa pun.</p>
+    </div>
+
+    <div class="sim-bar">
+      <p class="sim-progress" id="sim-progress" role="status" aria-live="polite"></p>
+      <div>
+        <button class="btn btn-quiet" type="button" data-reset-open aria-expanded="false" aria-controls="reset-sim">Ulangi simulasi</button>
+      </div>
+    </div>
+    <div class="notice notice-warn confirm-box" id="reset-sim" data-reset-scope="sim" hidden>
+      <p>Semua jawaban simulasi akan dihapus. Progres belajar dan hasil tes tetap aman.</p>
+      <div class="btn-row">
+        <button class="btn btn-danger" type="button" data-reset-confirm>Ya, ulangi simulasi</button>
+        <button class="btn btn-quiet" type="button" data-reset-cancel>Batal</button>
+      </div>
+    </div>
+
+    <div class="sim" id="sim" data-view="list">
+      <section class="inbox" aria-labelledby="inbox-title">
+        <h2 id="inbox-title">Kotak masuk</h2>
+        <ul id="inbox-list">
+          <li class="state-msg loading" style="padding:16px">Memuat kotak masuk</li>
+        </ul>
+      </section>
+      <section class="mailpane" id="mailpane" aria-label="Isi email">
+        <div class="mail-empty"><p>Pilih email di kotak masuk untuk mulai.</p></div>
+      </section>
+    </div>
+
+    <div class="sim-done" id="sim-done" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img src="../assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229">
+      <p>Transformasi digital yang aman sejak baris kode pertama</p>
+      <p>© 2026 GRINTEC · <a href="mailto:info@grintecs.com">info@grintecs.com</a> · <a href="https://wa.me/6285161364811" rel="noopener">WhatsApp +62 851 6136 4811</a> · <a href="https://grintecs.com/id/" rel="noopener">grintecs.com</a></p>
+    </div>
+  </footer>
+
+  <script src="../data/questions.id.js"></script>
+  <script src="../data/emails.id.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/simulation.js"></script>
+</body>
+</html>

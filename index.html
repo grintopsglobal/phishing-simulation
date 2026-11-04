@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spot Phishing | GRINTEC</title>
+  <meta name="description" content="Phishing email awareness training and pre-assessment by GRINTEC.">
+  <link rel="alternate" hreflang="id" href="id/index.html">
+  <link rel="preload" href="assets/fonts/jost-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/img/logo-grintec.png" alt="GRINTEC, home" width="800" height="229"></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="simulation.html">Simulation</a></li>
+          <li><a href="assessment.html">Test</a></li>
+          <li><a href="result.html">Result</a></li>
+        </ul>
+      </nav>
+      <a class="lang-switch" href="id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div>
+          <h1 id="hero-title">Learn to tell real emails from <em>email traps</em></h1>
+          <p class="hero-lead">Phishing is a fake email or message designed to make you click a link, open an attachment, or hand over data. Here you learn the warning signs, practise in a simulated inbox, then measure your skills with a short test.</p>
+          <ul class="hero-meta">
+            <li>About 15 minutes</li>
+            <li>No technical jargon</li>
+            <li>Continue any time</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="learn.html">Learn the phishing signs</a>
+            <a class="btn btn-secondary" href="assessment.html">Go straight to the test</a>
+          </div>
+          <p class="privacy-note"><strong>Your data stays on this device.</strong> Your name, answers, and results are stored only in the browser you are using. Nothing is sent to any server.</p>
+        </div>
+
+        <!-- Curved line motif from the logo symbol, decorative -->
+        <svg class="hero-motif" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+          <defs><clipPath id="motif-clip"><circle cx="200" cy="200" r="196"/></clipPath></defs>
+          <g clip-path="url(#motif-clip)" fill="none" stroke-width="38" stroke-linecap="butt">
+            <path d="M-40 40 Q 190 -40 440 30" stroke="#B9D535"/>
+            <path d="M-40 100 Q 190 10 440 85" stroke="#8DC63F"/>
+            <path d="M-40 160 Q 190 65 440 140" stroke="#62B947"/>
+            <path d="M-40 220 Q 190 120 440 195" stroke="#00A651"/>
+            <path d="M-40 280 Q 190 175 440 250" stroke="#009444"/>
+            <path d="M-40 340 Q 190 230 440 305" stroke="#007A3D"/>
+            <path d="M-40 400 Q 190 285 440 360" stroke="#00663A"/>
+            <path d="M-40 460 Q 190 340 440 415" stroke="#00663A"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Resume banner, shown when progress is saved -->
+    <section class="resume" id="resume" hidden aria-label="Saved progress">
+      <div class="container">
+        <div class="panel">
+          <p id="resume-text"></p>
+          <div class="btn-row">
+            <a class="btn btn-primary" id="resume-link" href="learn.html">Continue</a>
+            <button class="btn btn-quiet" type="button" data-reset-open aria-expanded="false" aria-controls="reset-home">Start over</button>
+          </div>
+        </div>
+        <div class="notice notice-warn confirm-box" id="reset-home" hidden>
+          <p>All progress, your name, and test results in this browser will be deleted. Continue?</p>
+          <div class="btn-row">
+            <button class="btn btn-danger" type="button" data-reset-confirm>Yes, delete everything</button>
+            <button class="btn btn-quiet" type="button" data-reset-cancel>Cancel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four stages -->
+    <section class="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <h2 id="journey-title">Four stages, from spotting to measuring</h2>
+        <svg class="curve journey-curve" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g-journey" x1="0" x2="1">
+              <stop offset="0" stop-color="#B9D535"/><stop offset=".5" stop-color="#00A651"/><stop offset="1" stop-color="#00663A"/>
+            </linearGradient>
+          </defs>
+          <path class="track" d="M4 32 C 300 4, 700 4, 996 32" fill="none" stroke-width="6"/>
+          <path class="fill" id="journey-fill" d="M4 32 C 300 4, 700 4, 996 32" fill="none" stroke="url(#g-journey)" stroke-width="6" stroke-linecap="butt" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        </svg>
+        <ol class="stages">
+          <li>
+            <a href="learn.html">
+              <h3>1. Learn</h3>
+              <p class="time">About 4 minutes</p>
+              <p class="muted">Eight signs of phishing, each with an example and what to do about it.</p>
+            </a>
+            <span class="stage-status" data-stage="learn">Not started</span>
+          </li>
+          <li>
+            <a href="simulation.html">
+              <h3>2. Simulation</h3>
+              <p class="time">About 4 minutes</p>
+              <p class="muted">A practice inbox with real emails and email traps. You decide which is which.</p>
+            </a>
+            <span class="stage-status" data-stage="sim">Not started</span>
+          </li>
+          <li>
+            <a href="assessment.html">
+              <h3>3. Test</h3>
+              <p class="time">About 7 minutes</p>
+              <p class="muted">15 questions in a full-page exam, from easy to hard, with no hints.</p>
+            </a>
+            <span class="stage-status" data-stage="test">Not started</span>
+          </li>
+          <li>
+            <a href="result.html">
+              <h3>4. Result</h3>
+              <p class="time">Instant</p>
+              <p class="muted">Your score, what to review, and a report you can print.</p>
+            </a>
+            <span class="stage-status" data-stage="result">None yet</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Threat statistics. Every figure links to its source.
+         Checked November 2026. Update when newer editions are published. -->
+    <section class="threats" aria-labelledby="threats-title">
+      <div class="container">
+        <h2 id="threats-title">Why this matters</h2>
+        <div class="grid">
+          <div class="stat">
+            <span class="num">62%</span>
+            <p>of confirmed data breaches involved a person: falling for social engineering, making a mistake, or using stolen credentials.</p>
+            <cite>Source: <a href="https://www.verizon.com/business/resources/reports/dbir/" rel="noopener">Verizon, 2026 Data Breach Investigations Report</a></cite>
+          </div>
+          <div class="stat">
+            <span class="num">191,561</span>
+            <p>phishing and spoofing complaints were filed with the FBI in 2025, more than any other type of cybercrime.</p>
+            <cite>Source: <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" rel="noopener">FBI IC3, 2025 Internet Crime Report</a></cite>
+          </div>
+          <div class="stat">
+            <span class="num">US$3.05 bn</span>
+            <p>was lost in 2025 to business email compromise: fake invoices, changed bank details, and messages from a "boss" asking for a transfer.</p>
+            <cite>Source: <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" rel="noopener">FBI IC3, 2025 Internet Crime Report</a></cite>
+          </div>
+        </div>
+
+        <!-- GRINTEC's own case study: real client data, client name withheld under NDA -->
+        <div class="case">
+          <div class="case-head">
+            <h3>What we saw in a real simulation</h3>
+            <p class="muted">A two-month GRINTEC phishing simulation for a client in 2025 (name withheld under NDA). The trap that worked best was an email impersonating a colleague.</p>
+          </div>
+          <dl class="case-figures">
+            <div><dt>Opened the email</dt><dd>60.6%</dd></div>
+            <div><dt>Clicked the link</dt><dd>7.0%</dd></div>
+            <div><dt>Entered their data</dt><dd>5.6%</dd></div>
+            <div class="case-key"><dt>Reported it</dt><dd>36.6%</dd><span class="small">Target: at least 50%</span></div>
+          </dl>
+          <a href="https://grintecs.com/en/works/phishing-simulation-casestudy/" rel="noopener">Read the full case study</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional identity, shown on the result page only -->
+    <section class="identity" aria-labelledby="identity-title">
+      <div class="container">
+        <div class="panel">
+          <h2 id="identity-title">Name on your result report <span class="muted small">(optional)</span></h2>
+          <p class="muted">Fill this in if you want your name and division printed on the report. It is not sent anywhere.</p>
+          <form id="identity-form" novalidate>
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" maxlength="60">
+            </div>
+            <div class="field">
+              <label for="f-division">Division</label>
+              <input id="f-division" name="division" type="text" autocomplete="organization-title" maxlength="60">
+            </div>
+            <button class="btn btn-secondary" type="submit">Save name</button>
+          </form>
+          <p class="form-status" id="identity-status" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img src="assets/img/logo-grintec.png" alt="GRINTEC" width="800" height="229">
+      <p>Securing Future Transformation</p>
+      <p>© 2026 GRINTEC · <a href="mailto:info@grintecs.com">info@grintecs.com</a> · <a href="https://wa.me/6285161364811" rel="noopener">WhatsApp +62 851 6136 4811</a> · <a href="https://grintecs.com/en/" rel="noopener">grintecs.com</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
