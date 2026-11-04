@@ -46,7 +46,7 @@ window.GRINTEC_EMAILS = [
         flag: { cat: "link", note: "Tombol menuju kirimcepat-delivery.net, bukan situs resmi kurir." } },
       { text: "Salam,\nTim Layanan KirimCepat" }
     ],
-    lesson: "Biaya kecil adalah umpan. Cek status paket langsung di aplikasi atau situs resmi kurir."
+    lesson: "Biaya kecil itu dipakai sebagai umpan, jadi cek status paket langsung di aplikasi atau situs resmi kurir."
   },
   {
     id: "e02",
@@ -62,7 +62,7 @@ window.GRINTEC_EMAILS = [
       { text: "Jika ada pertanyaan, hubungi tim HR di ekstensi 210.\n\nSalam,\nTim HR" }
     ],
     safeReason: "Pengirim memakai domain kantor yang benar, link menuju subdomain kantor sendiri dan teksnya sama dengan alamat aslinya, tidak ada desakan, dan tidak meminta password lewat email.",
-    lesson: "Email asli tetap bisa berisi link. Pastikan alamat tujuannya domain yang Anda kenal. Lebih aman lagi, buka portal HR dari bookmark."
+    lesson: "Email asli tetap bisa berisi link, jadi pastikan alamat tujuannya domain yang Anda kenal. Lebih aman lagi, buka portal HR dari bookmark."
   },
   {
     id: "e03",
@@ -100,7 +100,7 @@ window.GRINTEC_EMAILS = [
       { text: "TokoLaris tidak pernah meminta password, PIN, atau kode OTP Anda." }
     ],
     safeReason: "Isinya cocok dengan belanja yang memang Anda lakukan, domain pengirim dan link sama-sama tokolaris.co.id, dan tidak ada permintaan pembayaran ulang atau data rahasia.",
-    lesson: "Konteks penting. Email yang sesuai dengan tindakan Anda sendiri dan berasal dari domain yang benar umumnya aman."
+    lesson: "Email yang sesuai dengan tindakan Anda sendiri dan berasal dari domain yang benar umumnya aman."
   },
   {
     id: "e05",
@@ -157,7 +157,7 @@ window.GRINTEC_EMAILS = [
     ],
     attachments: [{ name: "INV-SKI-1126.pdf", size: "182 KB" }],
     safeReason: "Domain vendor sama seperti biasanya, lampiran berupa PDF yang memang ditunggu, rekening tidak berubah, dan tenggat mengikuti termin normal tanpa desakan.",
-    lesson: "Tagihan rutin itu wajar. Yang patut dicurigai adalah perubahan rekening mendadak. Jika itu terjadi, konfirmasi lewat telepon."
+    lesson: "Tagihan rutin itu wajar, sedangkan yang patut dicurigai adalah perubahan rekening yang mendadak. Bila itu terjadi, konfirmasi lewat telepon."
   },
   {
     id: "e08",
@@ -228,7 +228,7 @@ window.GRINTEC_EMAILS = [
       { text: "Tim Keamanan AkunKerja 365" }
     ],
     safeReason: "Email muncul karena tindakan Anda sendiri, domainnya benar, tidak ada link atau lampiran, dan Anda diarahkan untuk membuka aplikasi sendiri bila ada masalah.",
-    lesson: "Notifikasi keamanan yang asli tidak memaksa Anda mengklik. Ia menyarankan Anda membuka aplikasi atau situs resmi sendiri."
+    lesson: "Notifikasi keamanan yang asli menyarankan Anda membuka aplikasi atau situs resmi sendiri, tanpa mendesak Anda mengklik link."
   },
   {
     id: "e12",

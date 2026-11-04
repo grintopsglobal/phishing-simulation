@@ -48,7 +48,7 @@ window.GRINTEC_EMAILS = [
         flag: { cat: "link", note: "The button goes to kirimcepat-delivery.net, not the courier's official site." } },
       { text: "Regards,\nKirimCepat Customer Service" }
     ],
-    lesson: "A small fee is the bait. Check your parcel status directly in the courier's official app or website."
+    lesson: "The small fee is bait, so check your parcel status directly in the courier's official app or website."
   },
   {
     id: "e02",
@@ -64,7 +64,7 @@ window.GRINTEC_EMAILS = [
       { text: "If you have questions, contact the HR team on extension 210.\n\nRegards,\nHR Team" }
     ],
     safeReason: "The sender uses the correct company domain, the link goes to the company's own subdomain and its text matches the real address, there is no pressure, and it does not ask for your password by email.",
-    lesson: "Real emails can contain links too. Make sure the destination is a domain you know. Safer still, open the HR portal from your bookmarks."
+    lesson: "Real emails can contain links too, so check that the destination is a domain you know. Safer still, open the HR portal from your bookmarks."
   },
   {
     id: "e03",
@@ -102,7 +102,7 @@ window.GRINTEC_EMAILS = [
       { text: "TokoLaris never asks for your password, PIN, or OTP code." }
     ],
     safeReason: "It matches a purchase you really made, the sender and the link both use tokolaris.co.id, and there is no request for a repeat payment or secret data.",
-    lesson: "Context matters. An email that matches something you did, from the right domain, is usually safe."
+    lesson: "An email that matches something you actually did, and comes from the right domain, is usually safe."
   },
   {
     id: "e05",
@@ -159,7 +159,7 @@ window.GRINTEC_EMAILS = [
     ],
     attachments: [{ name: "INV-SKI-1126.pdf", size: "182 KB" }],
     safeReason: "The supplier's domain is the usual one, the attachment is the PDF you were expecting, the bank account has not changed, and the due date follows normal terms with no pressure.",
-    lesson: "Regular invoices are normal. What deserves suspicion is a sudden change of bank account. If that happens, confirm by phone."
+    lesson: "Regular invoices are normal, while a sudden change of bank account deserves suspicion. If that happens, confirm by phone."
   },
   {
     id: "e08",
@@ -230,7 +230,7 @@ window.GRINTEC_EMAILS = [
       { text: "AkunKerja 365 Security Team" }
     ],
     safeReason: "The email was triggered by your own action, the domain is right, there are no links or attachments, and if something is wrong it tells you to open the app yourself.",
-    lesson: "Real security alerts don't push you to click. They tell you to open the official app or website yourself."
+    lesson: "A real security alert tells you to open the official app or website yourself instead of pushing you to click a link."
   },
   {
     id: "e12",

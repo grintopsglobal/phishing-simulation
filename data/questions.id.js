@@ -8,7 +8,7 @@
 /* Kategori red flag. `anchor` = id kartu di learn.html untuk rekomendasi. */
 window.GRINTEC_CATEGORIES = {
   domain:   { label: "Domain pengirim palsu",     anchor: "tanda-domain",   tip: "Baca bagian setelah @ huruf demi huruf, dan bandingkan dengan alamat yang biasa Anda terima." },
-  urgensi:  { label: "Urgensi dan ancaman",       anchor: "tanda-urgensi",  tip: "Saat email membuat Anda panik atau penasaran, itu tanda untuk berhenti sejenak, bukan untuk segera bertindak." },
+  urgensi:  { label: "Urgensi dan ancaman",       anchor: "tanda-urgensi",  tip: "Saat email membuat Anda panik atau penasaran, berhenti dulu dan periksa sebelum melakukan apa pun." },
   link:     { label: "Link yang tidak sesuai",    anchor: "tanda-link",     tip: "Arahkan kursor atau tekan lama link untuk melihat alamat aslinya sebelum mengklik." },
   lampiran: { label: "Lampiran berbahaya",        anchor: "tanda-lampiran", tip: "Jangan buka lampiran yang tidak Anda minta, terutama .exe, .zip, .html, atau file Office yang meminta Enable Content." },
   data:     { label: "Permintaan data sensitif",  anchor: "tanda-data",     tip: "Password, PIN, dan OTP tidak pernah diminta lewat email, chat, atau telepon, termasuk oleh tim IT." },
@@ -28,7 +28,7 @@ window.GRINTEC_CONFIG = {
   levels: [
     { min: 85, label: "Sangat Waspada", desc: "Anda konsisten mengenali tanda phishing. Pertahankan kebiasaan memeriksa sebelum mengklik, dan bantu rekan yang masih ragu." },
     { min: 60, label: "Cukup Waspada",  desc: "Anda sudah mengenali banyak tanda, tetapi masih ada celah yang bisa dimanfaatkan penipu. Fokus pada kategori dengan skor terendah di bawah." },
-    { min: 0,  label: "Rentan",         desc: "Beberapa jebakan masih lolos. Tidak apa-apa, justru itu gunanya tes ini. Pelajari lagi tanda-tandanya, lalu coba tes sekali lagi." }
+    { min: 0,  label: "Rentan",         desc: "Beberapa jebakan masih lolos. Pelajari lagi tanda-tandanya, mulai dari kategori dengan skor terendah di bawah, lalu coba tes sekali lagi." }
   ]
 };
 
@@ -60,7 +60,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Meminta ia mengirim email dulu, lalu memberikan kodenya." }
     ],
     answer: "b",
-    explanation: "Kode OTP hanya untuk Anda. Tim IT asli tidak pernah memintanya. Siapa pun yang meminta OTP sedang mencoba masuk ke akun Anda."
+    explanation: "Kode OTP hanya untuk Anda dan tim IT asli tidak pernah memintanya, sehingga siapa pun yang meminta OTP sedang mencoba masuk ke akun Anda."
   },
   {
     id: "q03", type: "url", level: "mudah", cat: "domain",
@@ -235,7 +235,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Tetap membayar ke rekening lama tanpa memberi tahu siapa pun." }
     ],
     answer: "b",
-    explanation: "Akun email vendor yang asli bisa dibajak. Membalas email berarti bertanya kepada penipu itu sendiri. Perubahan rekening wajib dikonfirmasi lewat saluran lain."
+    explanation: "Akun email vendor yang asli bisa dibajak, sehingga membalas email itu sama saja dengan bertanya kepada penipunya. Perubahan rekening wajib dikonfirmasi lewat saluran lain."
   },
   {
     id: "q21", type: "url", level: "sulit", cat: "link",
@@ -258,7 +258,7 @@ window.GRINTEC_QUESTIONS = [
   },
   {
     id: "q23", type: "scenario", level: "sulit", cat: "link",
-    prompt: "Ada poster di lift: \"Isi survei kepuasan karyawan, dapat voucher\" dengan QR code. Saat dipindai, alamat yang muncul bukan domain kantor. Apa yang Anda lakukan?",
+    prompt: "Ada poster di lift: \"Isi survei kepuasan karyawan, dapat voucher\" dengan kode QR. Saat dipindai, alamat yang muncul bukan domain kantor. Apa yang Anda lakukan?",
     options: [
       { id: "a", text: "Lanjut mengisi, karena posternya ada di gedung kantor." },
       { id: "b", text: "Tidak melanjutkan, lalu melaporkan poster itu ke tim IT atau keamanan gedung." },
@@ -266,7 +266,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Memotret posternya dan membagikannya ke grup kantor." }
     ],
     answer: "b",
-    explanation: "QR code adalah link yang tidak terlihat. Siapa pun bisa menempel poster. Alamat tujuan yang bukan domain kantor adalah tanda bahaya."
+    explanation: "Kode QR adalah link yang tidak terlihat, dan siapa pun bisa menempel poster. Alamat tujuan yang bukan domain kantor adalah tanda bahaya."
   },
   {
     id: "q24", type: "url", level: "sulit", cat: "domain",

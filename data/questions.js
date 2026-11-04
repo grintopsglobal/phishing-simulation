@@ -10,7 +10,7 @@
 /* Red flag categories. `anchor` = card id in learn.html, used by recommendations. */
 window.GRINTEC_CATEGORIES = {
   domain:   { label: "Fake sender domain",       anchor: "tanda-domain",   tip: "Read the part after @ letter by letter and compare it with the address you normally receive." },
-  urgensi:  { label: "Urgency and threats",      anchor: "tanda-urgensi",  tip: "When an email makes you panic or curious, that is a signal to pause, not to act fast." },
+  urgensi:  { label: "Urgency and threats",      anchor: "tanda-urgensi",  tip: "When an email makes you panic or curious, stop and check it before you do anything." },
   link:     { label: "Mismatched links",         anchor: "tanda-link",     tip: "Hover over or long-press a link to see its real address before you click." },
   lampiran: { label: "Dangerous attachments",    anchor: "tanda-lampiran", tip: "Do not open attachments you did not ask for, especially .exe, .zip, .html, or Office files that ask you to Enable Content." },
   data:     { label: "Requests for sensitive data", anchor: "tanda-data",  tip: "Passwords, PINs, and OTP codes are never requested by email, chat, or phone, not even by the IT team." },
@@ -31,7 +31,7 @@ window.GRINTEC_CONFIG = {
   levels: [
     { min: 85, label: "Highly Alert",     desc: "You consistently spot the signs of phishing. Keep checking before you click, and help colleagues who are still unsure." },
     { min: 60, label: "Fairly Alert",     desc: "You already recognise many signs, but there are still gaps a scammer could use. Focus on the categories with the lowest scores below." },
-    { min: 0,  label: "Vulnerable",       desc: "Some traps still got through. That is fine, it is exactly what this test is for. Go through the signs again, then try the test once more." }
+    { min: 0,  label: "Vulnerable",       desc: "Several traps still got past you. Go through the signs again, starting with the categories with the lowest scores below, then take the test once more." }
   ]
 };
 
@@ -63,7 +63,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Ask them to send an email first, then give them the code." }
     ],
     answer: "b",
-    explanation: "An OTP code is for you only. The real IT team never asks for it. Anyone asking for your OTP is trying to get into your account."
+    explanation: "An OTP code is for you only and the real IT team never asks for it, so anyone asking for your OTP is trying to get into your account."
   },
   {
     id: "q03", type: "url", level: "mudah", cat: "domain",
@@ -238,7 +238,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Keep paying the old account without telling anyone." }
     ],
     answer: "b",
-    explanation: "A supplier's real email account can be hacked. Replying means asking the scammer. Bank detail changes must be confirmed through another channel."
+    explanation: "A supplier's real email account can be hacked, in which case replying means asking the scammer. Bank detail changes must be confirmed through another channel."
   },
   {
     id: "q21", type: "url", level: "sulit", cat: "link",
@@ -269,7 +269,7 @@ window.GRINTEC_QUESTIONS = [
       { id: "d", text: "Take a photo of the poster and share it in the office group chat." }
     ],
     answer: "b",
-    explanation: "A QR code is a link you cannot see. Anyone can put up a poster. A destination that is not your company domain is a warning sign."
+    explanation: "A QR code is a link you cannot see, and anyone can put up a poster. A destination that is not your company domain is a warning sign."
   },
   {
     id: "q24", type: "url", level: "sulit", cat: "domain",
